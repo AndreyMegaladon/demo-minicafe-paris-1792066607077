@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minicafé — À propos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#F4F1EA] text-[#2C2C2C] font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-200 h-20 flex items-center">
+        <div class="max-w-6xl mx-auto px-6 w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-tight text-black">Minicafé</a>
+            <div class="hidden md:flex space-x-2 items-center">
+                <a href="index.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Accueil</a>
+                <a href="about.html" class="bg-[#D4AF37] text-white rounded-lg px-4 py-2 font-medium">À propos</a>
+                <a href="services.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Menu</a>
+                <a href="gallery.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Galerie</a>
+                <a href="booking.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Réserver</a>
+                <a href="contacts.html" class="hover:bg-amber-50 rounded-lg px-4 py-2 font-medium transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <div class="bg-white border-b border-gray-100 py-3">
+        <div class="max-w-6xl mx-auto px-6 text-sm text-gray-500">
+            <a href="index.html" class="hover:underline">Accueil</a> > À propos
+        </div>
+    </div>
+
+    <!-- About Content -->
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-8 text-center">À propos de Minicafé</h1>
+        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-xl space-y-6 text-lg text-gray-700 leading-relaxed">
+            <p>Né dans le plus petit coffee-shop de l'île Saint-Louis (1 rue des Deux-Ponts), Minicafé a étendu son univers chaleureux avec une seconde adresse pleine de charme au 10 rue des Barres, face au chevet de l'église Saint-Gervais. Dans un décor de pierres apparentes et une ambiance inspirée des tendances asiatiques, notre équipe vous propose une sélection pointue de cafés de spécialité, de l'espresso traditionnel aux créations glacées à base de matcha.</p>
+            <p>Que vous choisissiez de commander votre latte par la fenêtre pour aller flâner le long des quais de Seine ou de vous poser sur notre agréable terrasse pavée, chaque visite est une parenthèse gourmande. Notre carte met à l'honneur des douceurs maison irrésistibles : cookies généreux, mochis fondants, banana bread, et l'incontournable sando japonais aux œufs mayonnaise.</p>
+            <p>Véritable lieu de vie pour les amateurs de bonnes choses et de calme au cœur de Paris, Minicafé allie savoir-faire barista de haute volée et accueil toujours chaleureux. Venez savourer un moment d'exception dans l'une des plus belles perspectives médiévales de la capitale.</p>
+        </div>
+
+        <!-- Unique Facts -->
+        <div class="mt-16">
+            <h2 class="text-2xl font-bold mb-6 text-center">Nos Particularités</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h3 class="font-bold text-lg mb-2 text-[#D4AF37]">Deux Adresses</h3>
+                    <p class="text-sm text-gray-600">Possède deux adresses emblématiques dans le 4e arrondissement de Paris : l'historique sur l'île Saint-Louis et l'annexe de la rue des Barres.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h3 class="font-bold text-lg mb-2 text-[#D4AF37]">Cadre Historique</h3>
+                    <p class="text-sm text-gray-600">Situé dans l'une des plus belles rues médiévales de Paris, face au chevet de l'église Saint-Gervais.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h3 class="font-bold text-lg mb-2 text-[#D4AF37]">Influences Asiatiques</h3>
+                    <p class="text-sm text-gray-600">Propose des spécialités aux influences asiatiques uniques comme les sandos japonais aux œufs mayonnaise et des boissons signatures au matcha.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Minicafé</h3>
+                <p class="text-sm">Specialty Coffee & Matcha au cœur de Paris.</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Contact</h3>
+                <p class="text-sm mb-2">10 Rue des Barres, 75004 Paris, France</p>
+                <p class="text-sm mb-2">+33612176175</p>
+                <p class="text-sm">contact@minicafeparis.fr</p>
+            </div>
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">Horaires</h3>
+                <p class="text-sm">Lundi au Jeudi : 09:30 - 18:00</p>
+                <p class="text-sm">Vendredi au Dimanche : 09:30 - 18:30</p>
+            </div>
+        </div>
+    </footer>
+
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    // Плавная прокрутка
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
